@@ -57,7 +57,9 @@ $(document).ready(function(){
 			displayDays: 2,
 			displayCaptions: true,
 			fontSize: fontSize,
-			captionSize: captionSize
+			captionSize: captionSize,
+			lang: 'custom',
+			custom_labels: custom_labels,
 		});
 	}
 function scrollWidth()
