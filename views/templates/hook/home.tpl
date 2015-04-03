@@ -24,7 +24,7 @@
 *}
 <link href="{$base_dir|escape:''}modules/dinterval/views/css/counter.css" rel="stylesheet">
 <script type="text/javascript" src="{$base_dir|escape:''}js/jquery/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="{$base_dir|escape:''}modules/dinterval/views/js/jquery.timeTo.min.js"></script>
+<script type="text/javascript" src="{$base_dir|escape:''}modules/dinterval/views/js/jquery.timeTo.js"></script>
 <script type="text/javascript" src="{$base_dir|escape:''}modules/dinterval/views/js/countdown.js"></script>
 <script>
     {*var date_begin = '{$date_begin|escape:''}';*}
