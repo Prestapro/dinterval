@@ -34,6 +34,7 @@
         fontFamily: 'Verdana, sans-serif',
         fontSize: 28,            // font-size of a digit by pixels
         lang: 'en',              // language of caption
+        custom_labels: {days:'X', hours:'X', min:'X', sec:'X'}, // labels for «custom» language
         seconds: 0,              // timer's countdown value in seconds
         start: true,             // true to start timer immediately
         theme: 'white',          // 'white' or 'black' theme fo timer's view
@@ -200,6 +201,9 @@
                 data.height = Math.round(data.fontSize * 100 / 93);
                 data.width = Math.round(data.fontSize * .8 + data.height * .13);
                 data.displayHours = !!(data.displayDays || data.displayHours);
+
+                // populate custom language
+                dictionary.custom = data.custom_labels;
 
                 $this
                     .addClass('timeTo')
