@@ -32,57 +32,33 @@ $(document).ready(function(){
 });
 
 	function responsiveFont(){
+		var fontSize, captionSize;
 		if($(window).width() + scrollWidth() >992){
-			$('#countdown').remove();
-			$('.wrap_counter').prepend('<div id="countdown" class="clearfix"></div>');
-			$('#countdown').timeTo({
-				timeTo: new Date(date_end),
-				displayDays: 2,
-				displayCaptions: true,
-				fontSize: 100,
-				captionSize: 24
-			});
+			fontSize = 100;
+			captionSize = 24;
 		}else if($(window).width() + scrollWidth() >768){
-			$('#countdown').remove();
-			$('.wrap_counter').prepend('<div id="countdown" class="clearfix"></div>');
-			$('#countdown').timeTo({
-				timeTo: new Date(date_end),
-				displayDays: 2,
-				displayCaptions: true,
-				fontSize: 60,
-				captionSize: 16
-			});
+			fontSize = 60;
+			captionSize = 16;
 		}else if($(window).width() + scrollWidth() > 480){
-			$('#countdown').remove();
-			$('.wrap_counter').prepend('<div id="countdown" class="clearfix"></div>');
-			$('#countdown').timeTo({
-				timeTo: new Date(date_end),
-				displayDays: 2,
-				displayCaptions: true,
-				fontSize: 40,
-				captionSize: 14
-			});
+			fontSize = 40;
+			captionSize = 14;
 		}else if($(window).width() + scrollWidth() > 380){
-			$('#countdown').remove();
-			$('.wrap_counter').prepend('<div id="countdown" class="clearfix"></div>');
-			$('#countdown').timeTo({
-				timeTo: new Date(date_end),
-				displayDays: 2,
-				displayCaptions: true,
-				fontSize: 30,
-				captionSize: 12
-			});
+			fontSize = 30;
+			captionSize = 12;
 		}else{
-			$('#countdown').remove();
-			$('.wrap_counter').prepend('<div id="countdown" class="clearfix"></div>');
-			$('#countdown').timeTo({
-				timeTo: new Date(date_end),
-				displayDays: 2,
-				displayCaptions: true,
-				fontSize: 25,
-				captionSize: 12
-			});
+			fontSize = 25;
+			captionSize = 12;
 		}
+
+		$('#countdown').remove();
+		$('.wrap_counter').prepend('<div id="countdown" class="clearfix"></div>');
+		$('#countdown').timeTo({
+			timeTo: new Date(date_end),
+			displayDays: 2,
+			displayCaptions: true,
+			fontSize: fontSize,
+			captionSize: captionSize
+		});
 	}
 function scrollWidth()
 	{
