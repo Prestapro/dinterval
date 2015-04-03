@@ -26,7 +26,7 @@
 <script type="text/javascript" src="{$base_dir|escape:''}modules/dinterval/js/jquery.timeTo.min.js"></script>
 <script type="text/javascript" src="{$base_dir|escape:''}modules/dinterval/js/countdown.js"></script>
 <script>
-    /*var date_begin = '{$date_begin|escape:''}';*/
+    {*var date_begin = '{$date_begin|escape:''}';*}
     var countEnd = '{if $date_end|date_format:"%m" == "01"}Jan{elseif $date_end|date_format:"%m" == "02"}Feb{elseif $date_end|date_format:"%m" == "03"}Mar{elseif $date_end|date_format:"%m" == "04"}Apr{elseif $date_end|date_format:"%m" == "05"}May{elseif $date_end|date_format:"%m" == "06"}Jun{elseif $date_end|date_format:"%m" == "07"}Jul{elseif $date_end|date_format:"%m" == "08"}Aug{elseif $date_end|date_format:"%m" == "09"}Sep{elseif $date_end|date_format:"%m" == "10"}Oct{elseif $date_end|date_format:"%m" == "11"}Nov{elseif $date_end|date_format:"%m" == "12"}Dec{/if}';
     var date_end = countEnd + '{$date_end|date_format:" %d %Y %H:%M:%S"}';
 </script>
