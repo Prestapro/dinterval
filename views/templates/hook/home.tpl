@@ -31,10 +31,10 @@
     var countEnd = '{if $date_end|date_format:"%m" == "01"}Jan{elseif $date_end|date_format:"%m" == "02"}Feb{elseif $date_end|date_format:"%m" == "03"}Mar{elseif $date_end|date_format:"%m" == "04"}Apr{elseif $date_end|date_format:"%m" == "05"}May{elseif $date_end|date_format:"%m" == "06"}Jun{elseif $date_end|date_format:"%m" == "07"}Jul{elseif $date_end|date_format:"%m" == "08"}Aug{elseif $date_end|date_format:"%m" == "09"}Sep{elseif $date_end|date_format:"%m" == "10"}Oct{elseif $date_end|date_format:"%m" == "11"}Nov{elseif $date_end|date_format:"%m" == "12"}Dec{/if}';
     var date_end = countEnd + '{$date_end|date_format:" %d %Y %H:%M:%S"}';
 	var custom_labels = {
-		days:'{l s="days" mod="dinterval"}',
-		hours:'{l s="hours" mod="dinterval"}',
-		min:'{l s="minutes" mod="dinterval"}',
-		sec:'{l s="seconds" mod="dinterval"}',
+		days:"{l s='days' mod='dinterval'}",
+		hours:"{l s='hours' mod='dinterval'}",
+		min:"{l s='minutes' mod='dinterval'}",
+		sec:"{l s='seconds' mod='dinterval'}",
 	};
 </script>
 <div class="wrap_counter">
