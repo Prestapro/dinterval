@@ -54,7 +54,7 @@ $(document).ready(function(){
 		$('.wrap_counter').prepend('<div id="countdown" class="clearfix"></div>');
 		$('#countdown').timeTo({
 			timeTo: new Date(date_end),
-			displayDays: 2,
+			// determine automatically // displayDays: 2,
 			displayCaptions: true,
 			fontSize: fontSize,
 			captionSize: captionSize,
