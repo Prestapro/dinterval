@@ -101,6 +101,10 @@ class Dinterval extends Module {
 	}
 	public function hookDisplayMaintenance()
 	{
+		// doesn't work...
+		//$this->context->controller->addCSS(($this->_path).'views/css/counter.css');
+		//$this->context->controller->addJS(($this->_path).'views/js/jquery.timeTo.min.js');
+		//$this->context->controller->addJS(($this->_path).'views/js/countdown.js');
 		$this->context->smarty->assign(array(
 			/*'date_begin' => Configuration::get('DI_BEGIN'),*/
 			'date_end' => Configuration::get('DI_END')
